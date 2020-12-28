@@ -11,3 +11,29 @@ Example
 "aA11" -> 2 # 'a' and '1'
 "ABBA" -> 2 # 'A' and 'B' each occur twice
 """
+
+text = 'IndivisibilitiesE'
+
+
+def duplicate_count(text):
+    """
+    Create a set of character for the text
+    Iterates through the set
+    Count the number of duplicates
+    """
+    n = 0
+    for c in set(text.lower()):
+        if text.lower().count(c) > 1:
+            n += 1
+    return n
+
+
+def duplicate_count(text):
+    """
+    Same in a one-liner
+    """
+    return len([c for c in set(text.lower()) if text.lower().count(c) > 1])
+
+
+if __name__ == '__main__':
+    print(duplicate_count(text))
