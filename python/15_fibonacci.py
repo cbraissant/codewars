@@ -16,7 +16,6 @@ The trick of the memoized version is that we will keep a cache data structure (m
 Refactor the function into a recursive Fibonacci function that using a memoized data structure avoids the deficiencies of tree recursion Can you make it so the memoization cache is private to this function?
 
 '''
-import codewars_test as test
 
 
 '''
@@ -73,10 +72,10 @@ def fibonacci(n):
 
 
 if __name__ == "__main__":
-    print(fibonacci(70))
-    # test.assert_equals(fibonacci(0), 0)
-    # test.assert_equals(fibonacci(1), 1)
-    # test.assert_equals(fibonacci(10), 55)
-    # test.assert_equals(fibonacci(50), 12586269025)
-    # test.assert_equals(fibonacci(60), 1548008755920)
-    # test.assert_equals(fibonacci(70), 190392490709135)
+    import codewars_test as test
+    test.assert_equals(fibonacci(0), 0)
+    test.assert_equals(fibonacci(1), 1)
+    test.assert_equals(fibonacci(10), 55)
+    test.assert_equals(fibonacci(50), 12586269025)
+    test.assert_equals(fibonacci(60), 1548008755920)
+    test.assert_equals(fibonacci(70), 190392490709135)
