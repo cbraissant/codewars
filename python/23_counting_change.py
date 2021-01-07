@@ -41,7 +41,6 @@ def count_change(money, coins):
         # print(coin, ways)
     return ways[money]
 
-
    
 if __name__ == "__main__":
     import codewars_test as test
